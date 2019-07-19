@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>t265_odom_first</name>
+  <name>t265_odom_second</name>
   <version>0.0.0</version>
-  <description>The t265_odom_first package</description>
+  <description>The t265_odom_second package</description>
   <maintainer email="rjjjjjp1997@163.com">rjp</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
   <depend>roscpp</depend>
   <depend>tf</depend>
-
 </package>
