@@ -1,0 +1,17 @@
+<launch>
+  <arg name="serial_no"                 default="908412110244"/>
+  <arg name="topic_odom_in"             default="/raccoon/chassis/odometry"/>
+  <arg name="topic_odom_out"            default="/raccoon/t265/odometry"/>
+  <arg name="calib_odom_file"           default="$(find t265_odom_second)/launch/odometry_cali.json"/>
+  <arg name="pub_frequence"             default="50"/>
+  <arg name="use_odometry"              default="false" />
+
+  <node pkg="t265_odom_second" type="t265_node" name="t265_node" output="screen">
+    <param name="serial_no"         type="str"      value="$(arg serial_no)"/>
+    <param name="calib_odom_file"   type="str"      value="$(arg calib_odom_file)"/>
+    <param name="topic_odom_in"     type="str"      value="$(arg topic_odom_in)"/>    
+    <param name="topic_odom_out"    type="str"      value="$(arg topic_odom_out)"/>
+    <param name="pub_frequence"     type="int"      value="$(arg pub_frequence)"/>
+    <param name="use_odometry"      type="bool"     value="$(arg use_odometry)"/>
+  </node>
+</launch>
