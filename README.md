@@ -15,7 +15,7 @@
 
 > context --> device --> sensor --> stream_profile --> pose
 >
->    	                     --> wheel_odometry
+>    	                --> wheel_odometry
 
 最终实现是通过 `rs2::sensor` 的 `open()` 函数加载 `stream_profile` 
 
@@ -41,11 +41,11 @@
 
 > pipeline --> pose
 >
-> ​       	--> pipeline_profile --> device --> wheel_odometry
+> ​       	 --> pipeline_profile --> device --> wheel_odometry
 
- `t265_odom_third` 面向对象的实验了一下
+ `t265_odom_third` 面向过程的实验了一下
 
- `t265_odom_4th` 用对象封装
+成功之后, `t265_odom_4th` 用对象封装
 
 实现了上述功能
 
